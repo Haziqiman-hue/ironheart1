@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitclub | Group Classes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #1c1c1c;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .class-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .class-box:hover {
+      transform: scale(1.03);
+    }
+
+    .class-box img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .class-label {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .class-box img {
+        height: 200px;
+      }
+
+      .class-label {
+        font-size: 16px;
+      }
+    }
+
+    .back-button {
+    display: inline-block;
+    margin: 40px auto 60px;
+    padding: 12px 28px;
+    background-color: #2f00ff;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    }
+
+    .back-button:hover {
+    background-color: #1a00b3;
+   }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Energise Your Fitness with Group Classes</h1>
+    <p>
+        Discover the power of group fitness at Iron Heart Fitness, featuring over 10 classes to inspire and challenge you. From dynamic options like HYROX, Les Mills BodyPump and Cardio to calming Flexibility training, our expert-led sessions are designed to energise your fitness journey.
+    </p>
+
+    <p>
+        Don’t miss our Peak Signature Classes:
+    </p>
+
+    <p>
+        Power: Strength-focused training to build muscle and endurance.
+        Cardio: A rhythm-based workout combining cardio and fun.
+        Flexibility: High-Intensity Interval Training for maximum calorie burn and fitness gains.
+    </p>
+
+    <p>
+        With flexible schedules and a supportive community, achieving your fitness goals has never been more exciting!
+    </p>
+    <div class="grid">
+      <div class="class-box">
+        <img src="image/power.webp" alt="Power Training">
+        <div class="class-label">Power Training</div>
+      </div>
+
+      <div class="class-box">
+        <img src="image/cardio.jpg" alt="Cardio Training">
+        <div class="class-label">Cardio Training</div>
+      </div>
+
+      <div class="class-box">
+        <img src="image/flex.jpg" alt="Yoga & Pilates">
+        <div class="class-label">Flexibility Training</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+     <a href="index.html" class="back-button">Home</a>
+  </div>
+
+
+</body>
+</html>
